@@ -1,0 +1,1859 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="5/7/2017 5:18:33 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="MANIKANTHREDDYL"
+  DTS:CreatorName="MANIKANTHREDDYL\manik"
+  DTS:DTSID="{B33524C7-B01E-4412-87B3-188194F7F1ED}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="14.0.0500.272"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package1"
+  DTS:PackageType="5"
+  DTS:VersionBuild="11"
+  DTS:VersionGUID="{DC47FB86-5F6A-44E9-BD58-5371E6CA78D3}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{14E5913F-F05F-41EA-998C-615E884A6D79}"
+      DTS:ObjectName="Flat File Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:Unicode="True"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="D:\airbnb\boston-airbnb-open-data\Filtered-data\listings.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="21"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;id&quot;"
+              DTS:DTSID="{D0FE4731-18D1-4CC5-AF6C-AB1E7CC07E45}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="500"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;listing_url&quot;"
+              DTS:DTSID="{EEEE2FF7-651E-47FB-A329-4CABF6A7EC33}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;name&quot;"
+              DTS:DTSID="{326C09F8-91F2-4F3C-9257-A8D9922C58ED}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="21"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;host_id&quot;"
+              DTS:DTSID="{08A7177F-E0F0-449F-B3F7-54D46929EB02}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="500"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;street&quot;"
+              DTS:DTSID="{941824C1-033B-48A9-BD33-5C1B762200EE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;property_type&quot;"
+              DTS:DTSID="{AD66BAA3-82B9-4C6F-B771-B4E80FBE0A16}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;room_type&quot;"
+              DTS:DTSID="{AC1DD24F-4F53-4356-B9A0-9425ABC887DF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="21"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;accommodates&quot;"
+              DTS:DTSID="{95F4799E-FD90-4B7A-A68B-885FACA13377}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="21"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;bedrooms&quot;"
+              DTS:DTSID="{D2CE8C6E-8896-4F14-90CE-3D694016B31E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="21"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;beds&quot;"
+              DTS:DTSID="{F9BE8D21-C2E1-4B36-A8E3-C8862F02DDB9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="500"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;amenities&quot;"
+              DTS:DTSID="{C56A64B1-1D6A-42A4-8224-4784E803A210}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="21"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;number_of_reviews&quot;"
+              DTS:DTSID="{2E556E0D-12EB-458A-8EC1-4227AB75D7C1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="21"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;review_scores_rating&quot;"
+              DTS:DTSID="{A8A6AA65-FE22-4639-8ECF-522FC2B9E0CD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="21"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;review_scores_accuracy&quot;"
+              DTS:DTSID="{E48EA41A-5072-4AD0-B4A5-119CAF379B91}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="21"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;review_scores_cleanliness&quot;"
+              DTS:DTSID="{94F96B89-0856-468B-8BB8-82581D9EC885}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="21"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;review_scores_checkin&quot;"
+              DTS:DTSID="{037F1779-44C0-44D9-BDF1-BB84F978FDB0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="21"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;review_scores_communication&quot;"
+              DTS:DTSID="{75FF09BF-EE97-4437-A16E-1963108F6E53}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="21"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;review_scores_location&quot;"
+              DTS:DTSID="{D7A36393-EA9D-4467-AC07-FF27C206AB6B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="21"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;review_scores_value&quot;"
+              DTS:DTSID="{B8FE3FE1-9202-446B-A666-8B8E6EDDE804}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;instant_bookable&quot;"
+              DTS:DTSID="{6D847EA0-30D8-441E-A161-44885EB5BBBC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;cancellation_policy&quot;"
+              DTS:DTSID="{FED4F091-245A-4C97-9ECD-3DC161E24E15}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LocalHost.Airbnb]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{E26E05D8-D79A-44FB-8EFB-F81C53E1855F}"
+      DTS:ObjectName="LocalHost.Airbnb">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=.;Initial Catalog=Airbnb;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Airbnb_db_listings"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{5F0DD209-8485-4083-812E-059C91D71B9C}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Airbnb_db_listings"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Airbnb_db_listings\Airbnb_db_Listings"
+              componentClassID="Microsoft.SQLServerDestination"
+              contactInfo="SQL Server Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;5"
+              description="SQL Server Destination"
+              name="Airbnb_db_Listings"
+              version="5">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.String"
+                  description="The name of the database object to copy data into."
+                  expressionType="Notify"
+                  name="BulkInsertTableName">[dbo].[Listings]</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies that any constraints on the destination object are checked during the data copy operation. Corresponds to the bulk insert CHECK_CONSTRAINTS option."
+                  name="BulkInsertCheckConstraints">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the number of the first row to copy. Corresponds to the bulk insert FIRSTROW option."
+                  expressionType="Notify"
+                  name="BulkInsertFirstRow">-1</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies that any insert triggers defined on the destination object will execute during the data copy. Corresponds to the bulk insert FIRE_TRIGGERS option."
+                  name="BulkInsertFireTriggers">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Corresponds to the bulk insert KEEPIDENTITY option."
+                  name="BulkInsertKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null copied to the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="BulkInsertKeepNulls">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the number of the last row to copy. Corresponds to the bulk insert LASTROW option."
+                  expressionType="Notify"
+                  name="BulkInsertLastRow">-1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the maximum number of syntax errors and compilation errors that can occur before the data copy operation is canceled. Each row that cannot be copied is ignored and counted as one error. Corresponds to the bulk insert MAXERRORS option."
+                  name="BulkInsertMaxErrors">-1</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies how the data to be copied is sorted. Corresponds to the bulk insert ORDER option."
+                  expressionType="Notify"
+                  name="BulkInsertOrder"></property>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies that a table-level lock is acquired for the duration of the data copy operation. Corresponds to the bulk insert TABLOCK option."
+                  name="BulkInsertTablock">true</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies in seconds the amount of time the SQL Destination adapter will wait before terminating if there is no data available for insertion.  A timeout value of 0 means the SQL Destination adapter will not time out."
+                  expressionType="Notify"
+                  name="Timeout">30</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion."
+                  name="MaxInsertCommitSize">0</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Airbnb_db_listings\Airbnb_db_Listings.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[LocalHost.Airbnb]"
+                  connectionManagerRefId="Package.ConnectionManagers[LocalHost.Airbnb]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Airbnb_db_listings\Airbnb_db_Listings.Inputs[SQL Server Destination Input]"
+                  hasSideEffects="true"
+                  name="SQL Server Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Airbnb_db_listings\Airbnb_db_Listings.Inputs[SQL Server Destination Input].Columns[listing_url]"
+                      cachedDataType="nText"
+                      cachedName="listing_url"
+                      externalMetadataColumnId="Package\Airbnb_db_listings\Airbnb_db_Listings.Inputs[SQL Server Destination Input].ExternalColumns[listing_url]"
+                      lineageId="Package\Airbnb_db_listings\Data Conversion.Outputs[Data Conversion Output].Columns[listing_url]" />
+                    <inputColumn
+                      refId="Package\Airbnb_db_listings\Airbnb_db_Listings.Inputs[SQL Server Destination Input].Columns[host_id]"
+                      cachedDataType="i4"
+                      cachedName="host_id"
+                      externalMetadataColumnId="Package\Airbnb_db_listings\Airbnb_db_Listings.Inputs[SQL Server Destination Input].ExternalColumns[host_id]"
+                      lineageId="Package\Airbnb_db_listings\Data Conversion.Outputs[Data Conversion Output].Columns[host_id]" />
+                    <inputColumn
+                      refId="Package\Airbnb_db_listings\Airbnb_db_Listings.Inputs[SQL Server Destination Input].Columns[property_type]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="property_type"
+                      externalMetadataColumnId="Package\Airbnb_db_listings\Airbnb_db_Listings.Inputs[SQL Server Destination Input].ExternalColumns[property_type]"
+                      lineageId="Package\Airbnb_db_listings\Data Conversion.Outputs[Data Conversion Output].Columns[property_type]" />
+                    <inputColumn
+                      refId="Package\Airbnb_db_listings\Airbnb_db_Listings.Inputs[SQL Server Destination Input].Columns[street]"
+                      cachedDataType="nText"
+                      cachedName="street"
+                      externalMetadataColumnId="Package\Airbnb_db_listings\Airbnb_db_Listings.Inputs[SQL Server Destination Input].ExternalColumns[street]"
+                      lineageId="Package\Airbnb_db_listings\Data Conversion.Outputs[Data Conversion Output].Columns[street]" />
+                    <inputColumn
+                      refId="Package\Airbnb_db_listings\Airbnb_db_Listings.Inputs[SQL Server Destination Input].Columns[room_type]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="room_type"
+                      externalMetadataColumnId="Package\Airbnb_db_listings\Airbnb_db_Listings.Inputs[SQL Server Destination Input].ExternalColumns[room_type]"
+                      lineageId="Package\Airbnb_db_listings\Data Conversion.Outputs[Data Conversion Output].Columns[room_type]" />
+                    <inputColumn
+                      refId="Package\Airbnb_db_listings\Airbnb_db_Listings.Inputs[SQL Server Destination Input].Columns[accommodates]"
+                      cachedDataType="i4"
+                      cachedName="accommodates"
+                      externalMetadataColumnId="Package\Airbnb_db_listings\Airbnb_db_Listings.Inputs[SQL Server Destination Input].ExternalColumns[accommodates]"
+                      lineageId="Package\Airbnb_db_listings\Data Conversion.Outputs[Data Conversion Output].Columns[accommodates]" />
+                    <inputColumn
+                      refId="Package\Airbnb_db_listings\Airbnb_db_Listings.Inputs[SQL Server Destination Input].Columns[bedrooms]"
+                      cachedDataType="i4"
+                      cachedName="bedrooms"
+                      externalMetadataColumnId="Package\Airbnb_db_listings\Airbnb_db_Listings.Inputs[SQL Server Destination Input].ExternalColumns[bedrooms]"
+                      lineageId="Package\Airbnb_db_listings\Data Conversion.Outputs[Data Conversion Output].Columns[bedrooms]" />
+                    <inputColumn
+                      refId="Package\Airbnb_db_listings\Airbnb_db_Listings.Inputs[SQL Server Destination Input].Columns[beds]"
+                      cachedDataType="i4"
+                      cachedName="beds"
+                      externalMetadataColumnId="Package\Airbnb_db_listings\Airbnb_db_Listings.Inputs[SQL Server Destination Input].ExternalColumns[beds]"
+                      lineageId="Package\Airbnb_db_listings\Data Conversion.Outputs[Data Conversion Output].Columns[beds]" />
+                    <inputColumn
+                      refId="Package\Airbnb_db_listings\Airbnb_db_Listings.Inputs[SQL Server Destination Input].Columns[amenities]"
+                      cachedDataType="nText"
+                      cachedName="amenities"
+                      externalMetadataColumnId="Package\Airbnb_db_listings\Airbnb_db_Listings.Inputs[SQL Server Destination Input].ExternalColumns[amenities]"
+                      lineageId="Package\Airbnb_db_listings\Data Conversion.Outputs[Data Conversion Output].Columns[amenities]" />
+                    <inputColumn
+                      refId="Package\Airbnb_db_listings\Airbnb_db_Listings.Inputs[SQL Server Destination Input].Columns[instant_bookable]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="instant_bookable"
+                      externalMetadataColumnId="Package\Airbnb_db_listings\Airbnb_db_Listings.Inputs[SQL Server Destination Input].ExternalColumns[instant_bookable]"
+                      lineageId="Package\Airbnb_db_listings\Data Conversion.Outputs[Data Conversion Output].Columns[instant_bookable]" />
+                    <inputColumn
+                      refId="Package\Airbnb_db_listings\Airbnb_db_Listings.Inputs[SQL Server Destination Input].Columns[number_of_reviews]"
+                      cachedDataType="i4"
+                      cachedName="number_of_reviews"
+                      externalMetadataColumnId="Package\Airbnb_db_listings\Airbnb_db_Listings.Inputs[SQL Server Destination Input].ExternalColumns[number_of_reviews]"
+                      lineageId="Package\Airbnb_db_listings\Data Conversion.Outputs[Data Conversion Output].Columns[number_of_reviews]" />
+                    <inputColumn
+                      refId="Package\Airbnb_db_listings\Airbnb_db_Listings.Inputs[SQL Server Destination Input].Columns[review_scores_rating]"
+                      cachedDataType="i4"
+                      cachedName="review_scores_rating"
+                      externalMetadataColumnId="Package\Airbnb_db_listings\Airbnb_db_Listings.Inputs[SQL Server Destination Input].ExternalColumns[review_scores_rating]"
+                      lineageId="Package\Airbnb_db_listings\Data Conversion.Outputs[Data Conversion Output].Columns[review_scores_rating]" />
+                    <inputColumn
+                      refId="Package\Airbnb_db_listings\Airbnb_db_Listings.Inputs[SQL Server Destination Input].Columns[review_scores_accuracy]"
+                      cachedDataType="i4"
+                      cachedName="review_scores_accuracy"
+                      externalMetadataColumnId="Package\Airbnb_db_listings\Airbnb_db_Listings.Inputs[SQL Server Destination Input].ExternalColumns[review_scores_accuracy]"
+                      lineageId="Package\Airbnb_db_listings\Data Conversion.Outputs[Data Conversion Output].Columns[review_scores_accuracy]" />
+                    <inputColumn
+                      refId="Package\Airbnb_db_listings\Airbnb_db_Listings.Inputs[SQL Server Destination Input].Columns[review_scores_cleanliness]"
+                      cachedDataType="i4"
+                      cachedName="review_scores_cleanliness"
+                      externalMetadataColumnId="Package\Airbnb_db_listings\Airbnb_db_Listings.Inputs[SQL Server Destination Input].ExternalColumns[review_scores_cleanliness]"
+                      lineageId="Package\Airbnb_db_listings\Data Conversion.Outputs[Data Conversion Output].Columns[review_scores_cleanliness]" />
+                    <inputColumn
+                      refId="Package\Airbnb_db_listings\Airbnb_db_Listings.Inputs[SQL Server Destination Input].Columns[review_scores_checkin]"
+                      cachedDataType="i4"
+                      cachedName="review_scores_checkin"
+                      externalMetadataColumnId="Package\Airbnb_db_listings\Airbnb_db_Listings.Inputs[SQL Server Destination Input].ExternalColumns[review_scores_checkin]"
+                      lineageId="Package\Airbnb_db_listings\Data Conversion.Outputs[Data Conversion Output].Columns[review_scores_checkin]" />
+                    <inputColumn
+                      refId="Package\Airbnb_db_listings\Airbnb_db_Listings.Inputs[SQL Server Destination Input].Columns[review_scores_communication]"
+                      cachedDataType="i4"
+                      cachedName="review_scores_communication"
+                      externalMetadataColumnId="Package\Airbnb_db_listings\Airbnb_db_Listings.Inputs[SQL Server Destination Input].ExternalColumns[review_scores_communication]"
+                      lineageId="Package\Airbnb_db_listings\Data Conversion.Outputs[Data Conversion Output].Columns[review_scores_communication]" />
+                    <inputColumn
+                      refId="Package\Airbnb_db_listings\Airbnb_db_Listings.Inputs[SQL Server Destination Input].Columns[review_scores_location]"
+                      cachedDataType="i4"
+                      cachedName="review_scores_location"
+                      externalMetadataColumnId="Package\Airbnb_db_listings\Airbnb_db_Listings.Inputs[SQL Server Destination Input].ExternalColumns[review_scores_location]"
+                      lineageId="Package\Airbnb_db_listings\Data Conversion.Outputs[Data Conversion Output].Columns[review_scores_location]" />
+                    <inputColumn
+                      refId="Package\Airbnb_db_listings\Airbnb_db_Listings.Inputs[SQL Server Destination Input].Columns[review_scores_value]"
+                      cachedDataType="i4"
+                      cachedName="review_scores_value"
+                      externalMetadataColumnId="Package\Airbnb_db_listings\Airbnb_db_Listings.Inputs[SQL Server Destination Input].ExternalColumns[review_scores_value]"
+                      lineageId="Package\Airbnb_db_listings\Data Conversion.Outputs[Data Conversion Output].Columns[review_scores_value]" />
+                    <inputColumn
+                      refId="Package\Airbnb_db_listings\Airbnb_db_Listings.Inputs[SQL Server Destination Input].Columns[cancellation_policy]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="cancellation_policy"
+                      externalMetadataColumnId="Package\Airbnb_db_listings\Airbnb_db_Listings.Inputs[SQL Server Destination Input].ExternalColumns[cancellation_policy]"
+                      lineageId="Package\Airbnb_db_listings\Data Conversion.Outputs[Data Conversion Output].Columns[cancellation_policy]" />
+                    <inputColumn
+                      refId="Package\Airbnb_db_listings\Airbnb_db_Listings.Inputs[SQL Server Destination Input].Columns[name]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="name"
+                      externalMetadataColumnId="Package\Airbnb_db_listings\Airbnb_db_Listings.Inputs[SQL Server Destination Input].ExternalColumns[name]"
+                      lineageId="Package\Airbnb_db_listings\Data Conversion.Outputs[Data Conversion Output].Columns[name]" />
+                    <inputColumn
+                      refId="Package\Airbnb_db_listings\Airbnb_db_Listings.Inputs[SQL Server Destination Input].Columns[id]"
+                      cachedDataType="i4"
+                      cachedName="id"
+                      externalMetadataColumnId="Package\Airbnb_db_listings\Airbnb_db_Listings.Inputs[SQL Server Destination Input].ExternalColumns[id]"
+                      lineageId="Package\Airbnb_db_listings\Data Conversion.Outputs[Data Conversion Output].Columns[id]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Airbnb_db_listings\Airbnb_db_Listings.Inputs[SQL Server Destination Input].ExternalColumns[listing_url]"
+                      dataType="nText"
+                      name="listing_url" />
+                    <externalMetadataColumn
+                      refId="Package\Airbnb_db_listings\Airbnb_db_Listings.Inputs[SQL Server Destination Input].ExternalColumns[host_id]"
+                      dataType="i4"
+                      name="host_id" />
+                    <externalMetadataColumn
+                      refId="Package\Airbnb_db_listings\Airbnb_db_Listings.Inputs[SQL Server Destination Input].ExternalColumns[property_type]"
+                      dataType="wstr"
+                      length="50"
+                      name="property_type" />
+                    <externalMetadataColumn
+                      refId="Package\Airbnb_db_listings\Airbnb_db_Listings.Inputs[SQL Server Destination Input].ExternalColumns[street]"
+                      dataType="nText"
+                      name="street" />
+                    <externalMetadataColumn
+                      refId="Package\Airbnb_db_listings\Airbnb_db_Listings.Inputs[SQL Server Destination Input].ExternalColumns[room_type]"
+                      dataType="wstr"
+                      length="50"
+                      name="room_type" />
+                    <externalMetadataColumn
+                      refId="Package\Airbnb_db_listings\Airbnb_db_Listings.Inputs[SQL Server Destination Input].ExternalColumns[accommodates]"
+                      dataType="i4"
+                      name="accommodates" />
+                    <externalMetadataColumn
+                      refId="Package\Airbnb_db_listings\Airbnb_db_Listings.Inputs[SQL Server Destination Input].ExternalColumns[bedrooms]"
+                      dataType="i4"
+                      name="bedrooms" />
+                    <externalMetadataColumn
+                      refId="Package\Airbnb_db_listings\Airbnb_db_Listings.Inputs[SQL Server Destination Input].ExternalColumns[beds]"
+                      dataType="i4"
+                      name="beds" />
+                    <externalMetadataColumn
+                      refId="Package\Airbnb_db_listings\Airbnb_db_Listings.Inputs[SQL Server Destination Input].ExternalColumns[amenities]"
+                      dataType="nText"
+                      name="amenities" />
+                    <externalMetadataColumn
+                      refId="Package\Airbnb_db_listings\Airbnb_db_Listings.Inputs[SQL Server Destination Input].ExternalColumns[instant_bookable]"
+                      dataType="wstr"
+                      length="50"
+                      name="instant_bookable" />
+                    <externalMetadataColumn
+                      refId="Package\Airbnb_db_listings\Airbnb_db_Listings.Inputs[SQL Server Destination Input].ExternalColumns[number_of_reviews]"
+                      dataType="i4"
+                      name="number_of_reviews" />
+                    <externalMetadataColumn
+                      refId="Package\Airbnb_db_listings\Airbnb_db_Listings.Inputs[SQL Server Destination Input].ExternalColumns[review_scores_rating]"
+                      dataType="i4"
+                      name="review_scores_rating" />
+                    <externalMetadataColumn
+                      refId="Package\Airbnb_db_listings\Airbnb_db_Listings.Inputs[SQL Server Destination Input].ExternalColumns[review_scores_accuracy]"
+                      dataType="i4"
+                      name="review_scores_accuracy" />
+                    <externalMetadataColumn
+                      refId="Package\Airbnb_db_listings\Airbnb_db_Listings.Inputs[SQL Server Destination Input].ExternalColumns[review_scores_cleanliness]"
+                      dataType="i4"
+                      name="review_scores_cleanliness" />
+                    <externalMetadataColumn
+                      refId="Package\Airbnb_db_listings\Airbnb_db_Listings.Inputs[SQL Server Destination Input].ExternalColumns[review_scores_checkin]"
+                      dataType="i4"
+                      name="review_scores_checkin" />
+                    <externalMetadataColumn
+                      refId="Package\Airbnb_db_listings\Airbnb_db_Listings.Inputs[SQL Server Destination Input].ExternalColumns[review_scores_communication]"
+                      dataType="i4"
+                      name="review_scores_communication" />
+                    <externalMetadataColumn
+                      refId="Package\Airbnb_db_listings\Airbnb_db_Listings.Inputs[SQL Server Destination Input].ExternalColumns[review_scores_location]"
+                      dataType="i4"
+                      name="review_scores_location" />
+                    <externalMetadataColumn
+                      refId="Package\Airbnb_db_listings\Airbnb_db_Listings.Inputs[SQL Server Destination Input].ExternalColumns[review_scores_value]"
+                      dataType="i4"
+                      name="review_scores_value" />
+                    <externalMetadataColumn
+                      refId="Package\Airbnb_db_listings\Airbnb_db_Listings.Inputs[SQL Server Destination Input].ExternalColumns[cancellation_policy]"
+                      dataType="wstr"
+                      length="50"
+                      name="cancellation_policy" />
+                    <externalMetadataColumn
+                      refId="Package\Airbnb_db_listings\Airbnb_db_Listings.Inputs[SQL Server Destination Input].ExternalColumns[name]"
+                      dataType="wstr"
+                      length="100"
+                      name="name" />
+                    <externalMetadataColumn
+                      refId="Package\Airbnb_db_listings\Airbnb_db_Listings.Inputs[SQL Server Destination Input].ExternalColumns[id]"
+                      dataType="i4"
+                      name="id" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+            <component
+              refId="Package\Airbnb_db_listings\Data Conversion"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Data Conversion"
+              name="Data Conversion"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Airbnb_db_listings\Data Conversion.Inputs[Data Conversion Input]"
+                  name="Data Conversion Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Airbnb_db_listings\Data Conversion.Inputs[Data Conversion Input].Columns[&quot;host_id&quot;]"
+                      cachedDataType="ui8"
+                      cachedName="&quot;host_id&quot;"
+                      lineageId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns[&quot;host_id&quot;]" />
+                    <inputColumn
+                      refId="Package\Airbnb_db_listings\Data Conversion.Inputs[Data Conversion Input].Columns[&quot;review_scores_value&quot;]"
+                      cachedDataType="ui8"
+                      cachedName="&quot;review_scores_value&quot;"
+                      lineageId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns[&quot;review_scores_value&quot;]" />
+                    <inputColumn
+                      refId="Package\Airbnb_db_listings\Data Conversion.Inputs[Data Conversion Input].Columns[&quot;review_scores_location&quot;]"
+                      cachedDataType="ui8"
+                      cachedName="&quot;review_scores_location&quot;"
+                      lineageId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns[&quot;review_scores_location&quot;]" />
+                    <inputColumn
+                      refId="Package\Airbnb_db_listings\Data Conversion.Inputs[Data Conversion Input].Columns[&quot;review_scores_communication&quot;]"
+                      cachedDataType="ui8"
+                      cachedName="&quot;review_scores_communication&quot;"
+                      lineageId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns[&quot;review_scores_communication&quot;]" />
+                    <inputColumn
+                      refId="Package\Airbnb_db_listings\Data Conversion.Inputs[Data Conversion Input].Columns[&quot;review_scores_checkin&quot;]"
+                      cachedDataType="ui8"
+                      cachedName="&quot;review_scores_checkin&quot;"
+                      lineageId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns[&quot;review_scores_checkin&quot;]" />
+                    <inputColumn
+                      refId="Package\Airbnb_db_listings\Data Conversion.Inputs[Data Conversion Input].Columns[&quot;review_scores_cleanliness&quot;]"
+                      cachedDataType="ui8"
+                      cachedName="&quot;review_scores_cleanliness&quot;"
+                      lineageId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns[&quot;review_scores_cleanliness&quot;]" />
+                    <inputColumn
+                      refId="Package\Airbnb_db_listings\Data Conversion.Inputs[Data Conversion Input].Columns[&quot;accommodates&quot;]"
+                      cachedDataType="ui8"
+                      cachedName="&quot;accommodates&quot;"
+                      lineageId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns[&quot;accommodates&quot;]" />
+                    <inputColumn
+                      refId="Package\Airbnb_db_listings\Data Conversion.Inputs[Data Conversion Input].Columns[&quot;bedrooms&quot;]"
+                      cachedDataType="ui8"
+                      cachedName="&quot;bedrooms&quot;"
+                      lineageId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns[&quot;bedrooms&quot;]" />
+                    <inputColumn
+                      refId="Package\Airbnb_db_listings\Data Conversion.Inputs[Data Conversion Input].Columns[&quot;beds&quot;]"
+                      cachedDataType="ui8"
+                      cachedName="&quot;beds&quot;"
+                      lineageId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns[&quot;beds&quot;]" />
+                    <inputColumn
+                      refId="Package\Airbnb_db_listings\Data Conversion.Inputs[Data Conversion Input].Columns[&quot;review_scores_accuracy&quot;]"
+                      cachedDataType="ui8"
+                      cachedName="&quot;review_scores_accuracy&quot;"
+                      lineageId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns[&quot;review_scores_accuracy&quot;]" />
+                    <inputColumn
+                      refId="Package\Airbnb_db_listings\Data Conversion.Inputs[Data Conversion Input].Columns[&quot;number_of_reviews&quot;]"
+                      cachedDataType="ui8"
+                      cachedName="&quot;number_of_reviews&quot;"
+                      lineageId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns[&quot;number_of_reviews&quot;]" />
+                    <inputColumn
+                      refId="Package\Airbnb_db_listings\Data Conversion.Inputs[Data Conversion Input].Columns[&quot;review_scores_rating&quot;]"
+                      cachedDataType="ui8"
+                      cachedName="&quot;review_scores_rating&quot;"
+                      lineageId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns[&quot;review_scores_rating&quot;]" />
+                    <inputColumn
+                      refId="Package\Airbnb_db_listings\Data Conversion.Inputs[Data Conversion Input].Columns[&quot;id&quot;]"
+                      cachedDataType="ui8"
+                      cachedName="&quot;id&quot;"
+                      lineageId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns[&quot;id&quot;]" />
+                    <inputColumn
+                      refId="Package\Airbnb_db_listings\Data Conversion.Inputs[Data Conversion Input].Columns[&quot;instant_bookable&quot;]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="&quot;instant_bookable&quot;"
+                      lineageId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns[&quot;instant_bookable&quot;]" />
+                    <inputColumn
+                      refId="Package\Airbnb_db_listings\Data Conversion.Inputs[Data Conversion Input].Columns[&quot;amenities&quot;]"
+                      cachedDataType="wstr"
+                      cachedLength="500"
+                      cachedName="&quot;amenities&quot;"
+                      lineageId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns[&quot;amenities&quot;]" />
+                    <inputColumn
+                      refId="Package\Airbnb_db_listings\Data Conversion.Inputs[Data Conversion Input].Columns[&quot;room_type&quot;]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="&quot;room_type&quot;"
+                      lineageId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns[&quot;room_type&quot;]" />
+                    <inputColumn
+                      refId="Package\Airbnb_db_listings\Data Conversion.Inputs[Data Conversion Input].Columns[&quot;property_type&quot;]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="&quot;property_type&quot;"
+                      lineageId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns[&quot;property_type&quot;]" />
+                    <inputColumn
+                      refId="Package\Airbnb_db_listings\Data Conversion.Inputs[Data Conversion Input].Columns[&quot;street&quot;]"
+                      cachedDataType="wstr"
+                      cachedLength="500"
+                      cachedName="&quot;street&quot;"
+                      lineageId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns[&quot;street&quot;]" />
+                    <inputColumn
+                      refId="Package\Airbnb_db_listings\Data Conversion.Inputs[Data Conversion Input].Columns[&quot;name&quot;]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="&quot;name&quot;"
+                      lineageId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns[&quot;name&quot;]" />
+                    <inputColumn
+                      refId="Package\Airbnb_db_listings\Data Conversion.Inputs[Data Conversion Input].Columns[&quot;listing_url&quot;]"
+                      cachedDataType="wstr"
+                      cachedLength="500"
+                      cachedName="&quot;listing_url&quot;"
+                      lineageId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns[&quot;listing_url&quot;]" />
+                    <inputColumn
+                      refId="Package\Airbnb_db_listings\Data Conversion.Inputs[Data Conversion Input].Columns[&quot;cancellation_policy&quot;]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="&quot;cancellation_policy&quot;"
+                      lineageId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns[&quot;cancellation_policy&quot;]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Airbnb_db_listings\Data Conversion.Outputs[Data Conversion Output]"
+                  exclusionGroup="1"
+                  name="Data Conversion Output"
+                  synchronousInputId="Package\Airbnb_db_listings\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Airbnb_db_listings\Data Conversion.Outputs[Data Conversion Output].Columns[cancellation_policy]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Airbnb_db_listings\Data Conversion.Outputs[Data Conversion Output].Columns[cancellation_policy]"
+                      name="cancellation_policy"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns["cancellation_policy"]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Airbnb_db_listings\Data Conversion.Outputs[Data Conversion Output].Columns[property_type]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Airbnb_db_listings\Data Conversion.Outputs[Data Conversion Output].Columns[property_type]"
+                      name="property_type"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns["property_type"]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Airbnb_db_listings\Data Conversion.Outputs[Data Conversion Output].Columns[room_type]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Airbnb_db_listings\Data Conversion.Outputs[Data Conversion Output].Columns[room_type]"
+                      name="room_type"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns["room_type"]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Airbnb_db_listings\Data Conversion.Outputs[Data Conversion Output].Columns[amenities]"
+                      dataType="nText"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Airbnb_db_listings\Data Conversion.Outputs[Data Conversion Output].Columns[amenities]"
+                      name="amenities"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns["amenities"]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Airbnb_db_listings\Data Conversion.Outputs[Data Conversion Output].Columns[instant_bookable]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Airbnb_db_listings\Data Conversion.Outputs[Data Conversion Output].Columns[instant_bookable]"
+                      name="instant_bookable"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns["instant_bookable"]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Airbnb_db_listings\Data Conversion.Outputs[Data Conversion Output].Columns[listing_url]"
+                      dataType="nText"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Airbnb_db_listings\Data Conversion.Outputs[Data Conversion Output].Columns[listing_url]"
+                      name="listing_url"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns["listing_url"]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Airbnb_db_listings\Data Conversion.Outputs[Data Conversion Output].Columns[street]"
+                      dataType="nText"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Airbnb_db_listings\Data Conversion.Outputs[Data Conversion Output].Columns[street]"
+                      name="street"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns["street"]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Airbnb_db_listings\Data Conversion.Outputs[Data Conversion Output].Columns[name]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="100"
+                      lineageId="Package\Airbnb_db_listings\Data Conversion.Outputs[Data Conversion Output].Columns[name]"
+                      name="name"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns["name"]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Airbnb_db_listings\Data Conversion.Outputs[Data Conversion Output].Columns[review_scores_value]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Airbnb_db_listings\Data Conversion.Outputs[Data Conversion Output].Columns[review_scores_value]"
+                      name="review_scores_value"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns["review_scores_value"]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Airbnb_db_listings\Data Conversion.Outputs[Data Conversion Output].Columns[accommodates]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Airbnb_db_listings\Data Conversion.Outputs[Data Conversion Output].Columns[accommodates]"
+                      name="accommodates"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns["accommodates"]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Airbnb_db_listings\Data Conversion.Outputs[Data Conversion Output].Columns[host_id]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Airbnb_db_listings\Data Conversion.Outputs[Data Conversion Output].Columns[host_id]"
+                      name="host_id"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns["host_id"]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Airbnb_db_listings\Data Conversion.Outputs[Data Conversion Output].Columns[review_scores_checkin]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Airbnb_db_listings\Data Conversion.Outputs[Data Conversion Output].Columns[review_scores_checkin]"
+                      name="review_scores_checkin"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns["review_scores_checkin"]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Airbnb_db_listings\Data Conversion.Outputs[Data Conversion Output].Columns[review_scores_cleanliness]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Airbnb_db_listings\Data Conversion.Outputs[Data Conversion Output].Columns[review_scores_cleanliness]"
+                      name="review_scores_cleanliness"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns["review_scores_cleanliness"]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Airbnb_db_listings\Data Conversion.Outputs[Data Conversion Output].Columns[number_of_reviews]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Airbnb_db_listings\Data Conversion.Outputs[Data Conversion Output].Columns[number_of_reviews]"
+                      name="number_of_reviews"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns["number_of_reviews"]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Airbnb_db_listings\Data Conversion.Outputs[Data Conversion Output].Columns[bedrooms]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Airbnb_db_listings\Data Conversion.Outputs[Data Conversion Output].Columns[bedrooms]"
+                      name="bedrooms"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns["bedrooms"]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Airbnb_db_listings\Data Conversion.Outputs[Data Conversion Output].Columns[beds]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Airbnb_db_listings\Data Conversion.Outputs[Data Conversion Output].Columns[beds]"
+                      name="beds"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns["beds"]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Airbnb_db_listings\Data Conversion.Outputs[Data Conversion Output].Columns[review_scores_accuracy]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Airbnb_db_listings\Data Conversion.Outputs[Data Conversion Output].Columns[review_scores_accuracy]"
+                      name="review_scores_accuracy"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns["review_scores_accuracy"]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Airbnb_db_listings\Data Conversion.Outputs[Data Conversion Output].Columns[review_scores_rating]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Airbnb_db_listings\Data Conversion.Outputs[Data Conversion Output].Columns[review_scores_rating]"
+                      name="review_scores_rating"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns["review_scores_rating"]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Airbnb_db_listings\Data Conversion.Outputs[Data Conversion Output].Columns[id]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Airbnb_db_listings\Data Conversion.Outputs[Data Conversion Output].Columns[id]"
+                      name="id"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns["id"]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Airbnb_db_listings\Data Conversion.Outputs[Data Conversion Output].Columns[review_scores_communication]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Airbnb_db_listings\Data Conversion.Outputs[Data Conversion Output].Columns[review_scores_communication]"
+                      name="review_scores_communication"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns["review_scores_communication"]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Airbnb_db_listings\Data Conversion.Outputs[Data Conversion Output].Columns[review_scores_location]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Airbnb_db_listings\Data Conversion.Outputs[Data Conversion Output].Columns[review_scores_location]"
+                      name="review_scores_location"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns["review_scores_location"]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Airbnb_db_listings\Data Conversion.Outputs[Data Conversion Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Data Conversion Error Output"
+                  synchronousInputId="Package\Airbnb_db_listings\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Airbnb_db_listings\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Airbnb_db_listings\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Airbnb_db_listings\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Airbnb_db_listings\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Airbnb_db_listings\Listing_csv"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1033"
+              name="Listing_csv"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Airbnb_db_listings\Listing_csv.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns[&quot;id&quot;]"
+                      dataType="ui8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].ExternalColumns[&quot;id&quot;]"
+                      lineageId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns[&quot;id&quot;]"
+                      name="&quot;id&quot;"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns[&quot;listing_url&quot;]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].ExternalColumns[&quot;listing_url&quot;]"
+                      length="500"
+                      lineageId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns[&quot;listing_url&quot;]"
+                      name="&quot;listing_url&quot;"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns[&quot;name&quot;]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].ExternalColumns[&quot;name&quot;]"
+                      length="100"
+                      lineageId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns[&quot;name&quot;]"
+                      name="&quot;name&quot;"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns[&quot;host_id&quot;]"
+                      dataType="ui8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].ExternalColumns[&quot;host_id&quot;]"
+                      lineageId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns[&quot;host_id&quot;]"
+                      name="&quot;host_id&quot;"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns[&quot;street&quot;]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].ExternalColumns[&quot;street&quot;]"
+                      length="500"
+                      lineageId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns[&quot;street&quot;]"
+                      name="&quot;street&quot;"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns[&quot;property_type&quot;]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].ExternalColumns[&quot;property_type&quot;]"
+                      length="50"
+                      lineageId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns[&quot;property_type&quot;]"
+                      name="&quot;property_type&quot;"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns[&quot;room_type&quot;]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].ExternalColumns[&quot;room_type&quot;]"
+                      length="50"
+                      lineageId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns[&quot;room_type&quot;]"
+                      name="&quot;room_type&quot;"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns[&quot;accommodates&quot;]"
+                      dataType="ui8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].ExternalColumns[&quot;accommodates&quot;]"
+                      lineageId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns[&quot;accommodates&quot;]"
+                      name="&quot;accommodates&quot;"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns[&quot;bedrooms&quot;]"
+                      dataType="ui8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].ExternalColumns[&quot;bedrooms&quot;]"
+                      lineageId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns[&quot;bedrooms&quot;]"
+                      name="&quot;bedrooms&quot;"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns[&quot;beds&quot;]"
+                      dataType="ui8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].ExternalColumns[&quot;beds&quot;]"
+                      lineageId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns[&quot;beds&quot;]"
+                      name="&quot;beds&quot;"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns[&quot;amenities&quot;]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].ExternalColumns[&quot;amenities&quot;]"
+                      length="500"
+                      lineageId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns[&quot;amenities&quot;]"
+                      name="&quot;amenities&quot;"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns[&quot;number_of_reviews&quot;]"
+                      dataType="ui8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].ExternalColumns[&quot;number_of_reviews&quot;]"
+                      lineageId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns[&quot;number_of_reviews&quot;]"
+                      name="&quot;number_of_reviews&quot;"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns[&quot;review_scores_rating&quot;]"
+                      dataType="ui8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].ExternalColumns[&quot;review_scores_rating&quot;]"
+                      lineageId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns[&quot;review_scores_rating&quot;]"
+                      name="&quot;review_scores_rating&quot;"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns[&quot;review_scores_accuracy&quot;]"
+                      dataType="ui8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].ExternalColumns[&quot;review_scores_accuracy&quot;]"
+                      lineageId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns[&quot;review_scores_accuracy&quot;]"
+                      name="&quot;review_scores_accuracy&quot;"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns[&quot;review_scores_cleanliness&quot;]"
+                      dataType="ui8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].ExternalColumns[&quot;review_scores_cleanliness&quot;]"
+                      lineageId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns[&quot;review_scores_cleanliness&quot;]"
+                      name="&quot;review_scores_cleanliness&quot;"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns[&quot;review_scores_checkin&quot;]"
+                      dataType="ui8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].ExternalColumns[&quot;review_scores_checkin&quot;]"
+                      lineageId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns[&quot;review_scores_checkin&quot;]"
+                      name="&quot;review_scores_checkin&quot;"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns[&quot;review_scores_communication&quot;]"
+                      dataType="ui8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].ExternalColumns[&quot;review_scores_communication&quot;]"
+                      lineageId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns[&quot;review_scores_communication&quot;]"
+                      name="&quot;review_scores_communication&quot;"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns[&quot;review_scores_location&quot;]"
+                      dataType="ui8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].ExternalColumns[&quot;review_scores_location&quot;]"
+                      lineageId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns[&quot;review_scores_location&quot;]"
+                      name="&quot;review_scores_location&quot;"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns[&quot;review_scores_value&quot;]"
+                      dataType="ui8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].ExternalColumns[&quot;review_scores_value&quot;]"
+                      lineageId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns[&quot;review_scores_value&quot;]"
+                      name="&quot;review_scores_value&quot;"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns[&quot;instant_bookable&quot;]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].ExternalColumns[&quot;instant_bookable&quot;]"
+                      length="50"
+                      lineageId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns[&quot;instant_bookable&quot;]"
+                      name="&quot;instant_bookable&quot;"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns[&quot;cancellation_policy&quot;]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].ExternalColumns[&quot;cancellation_policy&quot;]"
+                      length="50"
+                      lineageId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].Columns[&quot;cancellation_policy&quot;]"
+                      name="&quot;cancellation_policy&quot;"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].ExternalColumns[&quot;id&quot;]"
+                      dataType="ui8"
+                      name="&quot;id&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].ExternalColumns[&quot;listing_url&quot;]"
+                      dataType="wstr"
+                      length="500"
+                      name="&quot;listing_url&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].ExternalColumns[&quot;name&quot;]"
+                      dataType="wstr"
+                      length="100"
+                      name="&quot;name&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].ExternalColumns[&quot;host_id&quot;]"
+                      dataType="ui8"
+                      name="&quot;host_id&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].ExternalColumns[&quot;street&quot;]"
+                      dataType="wstr"
+                      length="500"
+                      name="&quot;street&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].ExternalColumns[&quot;property_type&quot;]"
+                      dataType="wstr"
+                      length="50"
+                      name="&quot;property_type&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].ExternalColumns[&quot;room_type&quot;]"
+                      dataType="wstr"
+                      length="50"
+                      name="&quot;room_type&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].ExternalColumns[&quot;accommodates&quot;]"
+                      dataType="ui8"
+                      name="&quot;accommodates&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].ExternalColumns[&quot;bedrooms&quot;]"
+                      dataType="ui8"
+                      name="&quot;bedrooms&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].ExternalColumns[&quot;beds&quot;]"
+                      dataType="ui8"
+                      name="&quot;beds&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].ExternalColumns[&quot;amenities&quot;]"
+                      dataType="wstr"
+                      length="500"
+                      name="&quot;amenities&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].ExternalColumns[&quot;number_of_reviews&quot;]"
+                      dataType="ui8"
+                      name="&quot;number_of_reviews&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].ExternalColumns[&quot;review_scores_rating&quot;]"
+                      dataType="ui8"
+                      name="&quot;review_scores_rating&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].ExternalColumns[&quot;review_scores_accuracy&quot;]"
+                      dataType="ui8"
+                      name="&quot;review_scores_accuracy&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].ExternalColumns[&quot;review_scores_cleanliness&quot;]"
+                      dataType="ui8"
+                      name="&quot;review_scores_cleanliness&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].ExternalColumns[&quot;review_scores_checkin&quot;]"
+                      dataType="ui8"
+                      name="&quot;review_scores_checkin&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].ExternalColumns[&quot;review_scores_communication&quot;]"
+                      dataType="ui8"
+                      name="&quot;review_scores_communication&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].ExternalColumns[&quot;review_scores_location&quot;]"
+                      dataType="ui8"
+                      name="&quot;review_scores_location&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].ExternalColumns[&quot;review_scores_value&quot;]"
+                      dataType="ui8"
+                      name="&quot;review_scores_value&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].ExternalColumns[&quot;instant_bookable&quot;]"
+                      dataType="wstr"
+                      length="50"
+                      name="&quot;instant_bookable&quot;" />
+                    <externalMetadataColumn
+                      refId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output].ExternalColumns[&quot;cancellation_policy&quot;]"
+                      dataType="wstr"
+                      length="50"
+                      name="&quot;cancellation_policy&quot;" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      dataType="nText"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Airbnb_db_listings.Paths[Data Conversion Output]"
+              endId="Package\Airbnb_db_listings\Airbnb_db_Listings.Inputs[SQL Server Destination Input]"
+              name="Data Conversion Output"
+              startId="Package\Airbnb_db_listings\Data Conversion.Outputs[Data Conversion Output]" />
+            <path
+              refId="Package\Airbnb_db_listings.Paths[Flat File Source Output]"
+              endId="Package\Airbnb_db_listings\Data Conversion.Inputs[Data Conversion Input]"
+              name="Flat File Source Output"
+              startId="Package\Airbnb_db_listings\Listing_csv.Outputs[Flat File Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="166.666666666667,42.6666666666667"
+          Id="Package\Airbnb_db_listings"
+          TopLeft="132.499998025596,60.2105274491033" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Airbnb_db_listings">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="170.666666666667,42.6666666666667"
+          Id="Package\Airbnb_db_listings\Airbnb_db_Listings"
+          TopLeft="88.7291673511888,149.087719933588" />
+        <NodeLayout
+          Size="158.666666666667,42.6666666666667"
+          Id="Package\Airbnb_db_listings\Data Conversion"
+          TopLeft="72.1428566142208,82.5764426445052" />
+        <NodeLayout
+          Size="132,42.6666666666667"
+          Id="Package\Airbnb_db_listings\Listing_csv"
+          TopLeft="70.00000466903,5.19298218998328" />
+        <EdgeLayout
+          Id="Package\Airbnb_db_listings.Paths[Data Conversion Output]"
+          TopLeft="151.476189947554,125.243109311172">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="22.586310736968,23.8446106224161"
+              Start="0,0"
+              End="22.586310736968,16.3446106224161">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,7.92230531120805" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,7.92230531120805"
+                    Point2="0,11.922305311208"
+                    Point3="4,11.922305311208" />
+                  <mssgle:LineSegment
+                    End="18.586310736968,11.922305311208" />
+                  <mssgle:CubicBezierSegment
+                    Point1="18.586310736968,11.922305311208"
+                    Point2="22.586310736968,11.922305311208"
+                    Point3="22.586310736968,15.922305311208" />
+                  <mssgle:LineSegment
+                    End="22.586310736968,16.3446106224161" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Airbnb_db_listings.Paths[Flat File Source Output]"
+          TopLeft="136.00000466903,47.8596488566499">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="15.4761852785241,34.7167937878553"
+              Start="0,0"
+              End="15.4761852785241,27.2167937878553">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,13.3583968939276" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,13.3583968939276"
+                    Point2="0,17.3583968939276"
+                    Point3="4,17.3583968939276" />
+                  <mssgle:LineSegment
+                    End="11.4761852785241,17.3583968939276" />
+                  <mssgle:CubicBezierSegment
+                    Point1="11.4761852785241,17.3583968939276"
+                    Point2="15.4761852785241,17.3583968939276"
+                    Point3="15.4761852785241,21.3583968939276" />
+                  <mssgle:LineSegment
+                    End="15.4761852785241,27.2167937878553" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Airbnb_db_listings\Airbnb_db_Listings">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
